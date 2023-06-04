@@ -23,3 +23,4 @@ class CursoController extends Controller // no hay invoke por que son 3 , invoke
         return view('cursos.show',['curso'=>$curso]);
     }
 }
+// this is a comment here 
