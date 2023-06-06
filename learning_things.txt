@@ -5,3 +5,24 @@ para crear migraciones  hay que usear el orm
 
 ADEMAS :  php artisan migrate:rollback  // para volver hacia atras
 ADEMASL  php artisan migrate:fresh  // elimina todo y crea  todo, WARNING! es un destructive method
+ADEMAS : php artisan migrate:reset //elimina todo !!
+
+MODELOS 
+crea al ejecutar :   php artisan make:model Curso (singular despues lo pasara a plural solo) en  ./app/models/.. el model 
+*_ php artisan thinker   // mete la consola de otro color weird...
+*_ una vez que se abre la consola de tinker : 
+  use App\Models\Curso;
+  $curso = new curso();
+  $curso->name="whatever";
+  $curso->description="bla bla";
+  $curso->save();
+
+  SEEDERS  VIDEO 11  
+
+  php artisan db:seed //llena de registros solocitados de lo que escribimos en seeders  lee solo el DatabaseSeeder.php
+  php artisan make:seeder CursoSeeder  // crea seeders para cada tabla especifica que usaremos. en este caso el Curso agregar :  $this->call(CursoSeeder::class); en databvaseseeder.php
+
+
+FACTORIES VIDEO 12
+
+
