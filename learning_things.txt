@@ -41,6 +41,14 @@ php artisan make:factory Cursos
 > $cursos=curso::where('id',5)->first(); // notese que aca solo devuelve  un objeto y sin el first devuelve un array por lo tanto aca podemos $cursos->name  no asi con el array
 > $cursos=curso::find(5); //  forma facil de arriba que nos provee laravel ya que lo hacemos siempre
 > $cursos= curso::where('id','>',45)->get();
+> $cursos= Curso::where('name','like','%andmore%')->get();
+
+
+VIDEO 16  MUTADORES
+
+accesor en ./app/models/....  el get:
+MUTADORES transforman antes de almacenar valor.Modifican en DB
+ACCESORES transforman  cuando realizamos consulta a DB y pedimos retorno. no modifican en DB
 
 
 
