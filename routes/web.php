@@ -16,6 +16,10 @@ use App\Http\Controllers\CursoController;
 */
 
 Route::get('/', HomeController::class);
+// Route::view('/welcome', 'welcome');
+// Route::view('/pepe', 'pepemujica'); en este caso devuelve la vista isin usar controladores
+
+
 
 Route::controller(CursoController::class)->group(function(){
 
@@ -41,3 +45,7 @@ Route::controller(CursoController::class)->group(function(){
 // }
 
 // );
+//this is another example
+// Route::get('/posts/{post}/comments/{comment}', function (string $postId, string $commentId) {
+//     // ...
+// });

@@ -1,0 +1,7 @@
+para crear migraciones  hay que usear el orm 
+
+1_   php artisan migrate  // ejecuta  y crea todas las tablas con sus columnasd despues de ejecutrar up  da error si esta mal configurado
+2_ php artisan make:migration cursos  pero mejor hacer  php artisan make:migration create_curso_table  esto para crear migraciones para luego migrar cuando ejecute (1)    
+
+ADEMAS :  php artisan migrate:rollback  // para volver hacia atras
+ADEMASL  php artisan migrate:fresh  // elimina todo y crea  todo, WARNING! es un destructive method
