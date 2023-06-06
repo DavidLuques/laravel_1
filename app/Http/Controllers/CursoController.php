@@ -18,9 +18,9 @@ class CursoController extends Controller // no hay invoke por que son 3 , invoke
         );
     }
 
-    public function show($curso){
+    public function show($curso,$pepe){
         //compact('curso')  // le paso nombre de variable y pasa esto ['curso'=>$curso]
-        return view('cursos.show',['curso'=>$curso]);
+        return view('cursos.show',['curso'=>$curso,'pepe'=>$pepe]);
     }
 }
 // this is a comment here 

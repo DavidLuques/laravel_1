@@ -9,6 +9,6 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <h1>"this is the show page and this is the showed thing: <?php echo $curso; ?></h1>
+    <h1>"this is the show page and this is the showed thing: <?php echo $curso; ?> and this is the other one <?php echo $pepe;?></h1>
 </body>
 </html>
