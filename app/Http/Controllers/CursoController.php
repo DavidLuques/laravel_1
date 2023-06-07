@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Curso;
 use Illuminate\Http\Request;
 // aqui es  curso -> index
             //curso->create
@@ -10,12 +11,12 @@ use Illuminate\Http\Request;
 class CursoController extends Controller // no hay invoke por que son 3 , invoke es solo en 1 
 {
     public function index(){
+        $cursos= Curso::all();
         return view('cursos/index'); // el metodo view se dirige a resource/views/ , tiene el.php implicito
     }
 
     public function create(){
-        return view('cursos/create'
-        );
+        return view('cursos/create');
     }
 
     public function show($curso,$pepe){
@@ -23,4 +24,6 @@ class CursoController extends Controller // no hay invoke por que son 3 , invoke
         return view('cursos.show',['curso'=>$curso,'pepe'=>$pepe]);
     }
 }
+$double="";
+
 // this is a comment here 
